@@ -1,4 +1,4 @@
-const controller = require('../Users/userController.js');
+const controller = require('./userController.js');
 module.exports = [
    {
        path: '/loginUser',

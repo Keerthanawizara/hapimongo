@@ -59,13 +59,19 @@ const start =  async function() {
 
 start();
 
+const MongoClient = require('mongodb').MongoClient;
+ //connection url
+const url = 'mongodb://localhost:27017';
+const dbName = 'demo';
+let db;
+MongoClient.connect(url,function(err,client){
+  if(err) throw err;
+  console.log("mongodb connected sucessfully!");
 
-//mongoDB connection
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/demo";
+  db =client.db(dbName);
 
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("mongodb connected!");
-  db.close();
-}); 
+    client.close();
+})
+exports.db = db;
+
+

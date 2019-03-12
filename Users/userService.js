@@ -1,15 +1,8 @@
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/demo";
-
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("Database created!");
-  db.close();
-});
-
+ const server = require('../server.js');
 const loginUser = async (username) => {
-    return users.findOne({'username': username})
+    return server.db.users.findOne({'username': username})
     .then((user) => {
+        console.log(user)
         return user;
     })
     .catch((err) => {
@@ -17,4 +10,5 @@ const loginUser = async (username) => {
        return err;
     })
 }
-module.exports = loginUser;
+const loginUser = 
+exports.loginUser = loginUser;

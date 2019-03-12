@@ -1,0 +1,15 @@
+without schema mongodb and hapi js reference:
+
+
+http://mongodb.github.io/node-mongodb-native/3.1/
+
+https://dzone.com/articles/crud-operations-on-mongodb-thru-nodejs
+
+https://stackoverflow.com/questions/5370846/how-do-you-use-mongoose-without-defining-a-schema
+
+
+send json :
+
+https://dev.to/binarydigit/nodejs-send-json-to-local-client-29cd
+
+https://www.mongodb.com/json-and-bson

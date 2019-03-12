@@ -1,4 +1,4 @@
-const user = require('../Users/userService.js');
+const user = require('./userService.js');
 var jwt = require('jsonwebtoken');
 
 const loginUser = async (req, h) => {
@@ -33,4 +33,4 @@ const loginUser = async (req, h) => {
         }
     
     }
-    module.exports = loginUser;
+ module. exports = loginUser;
